@@ -19,21 +19,31 @@ Code Review Enforced is a web service that enforces code reviews in an organizat
 ##  Steps
 
 Install the following:
-Python 3.7
+
+Python 3.7(https://www.python.org/downloads/release/python-370/)
+
 Install pip
+
 To install pip, run these two commands:
+
 $ curl -O https://bootstrap.pypa.io/get-pip.py
+
 $ python3 get-pip.py --user
+
 pip install -r requirements.txt
+
 Your shell prompt will change to show the name of the activated environment.
-Install Flask¶
+
+Install Flask(https://phoenixnap.com/kb/install-flask)
+
 Within the activated environment, use the following command to install Flask:
+
 $ pip install Flask
 
-##  Ngrok : Link on how to download ngrok
+##  Ngrok : Link:(https://ngrok.com/download)
 
 Set GH_TOKEN as an environment variable with a value that corresponds to a GitHub Token (ie. export GH_TOKEN=(insert your token) example: 208923487234780287128091)
-For GH_TOKEN creation, use this link.
+For steps to generate GH_TOKEN, use this link (https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 ##  Next Steps
 
@@ -52,6 +62,7 @@ Note that the Payload URL should match the forwarding address from ngrok.
 Select the individual events radio button and check repositories
 
 Content type should be application/json
+
 Save the Webhook
 
 Create a repository
